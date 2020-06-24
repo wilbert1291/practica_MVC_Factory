@@ -1,0 +1,219 @@
+/***************************** Estilo en general de la pagina ******************************/
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    min-height: 100%;
+    position: relative;
+}
+
+
+/* css cuerpo de pagina (div)*/
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: rgba(215, 255, 255, .4);
+    background-attachment: fixed
+}
+
+
+/* footer de la pagina (div)*/
+.footer {
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+button[type=button] {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px
+}
+
+button[type=button]:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+input[type=text] {
+    font-size: 16px;
+    margin: 5px;
+}
+
+input[type=text]:hover{
+    border: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: firebrick;
+}
+
+/*************************** RESPONSIVE ***************************/
+* {
+    box-sizing: border-box;
+}
+
+/* div header */
+.header {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.1em;
+}
+
+/* class row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* class col- */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Para telefono: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* De tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Para PC: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
